@@ -1,4 +1,5 @@
 import pygame as pg
+# This program is not fully complete yet..
 pg.init() # Initialize a few things in pygame
 
 WIDTH, HEIGHT = 700, 500
