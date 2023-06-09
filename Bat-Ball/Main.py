@@ -25,6 +25,7 @@
 import sys
 import pygame
 import random
+import os
 
 
 class Breakout():
@@ -43,10 +44,12 @@ class Breakout():
         screen = pygame.display.set_mode(size)
         # screen = pygame.display.set_mode(size, pygame.FULLSCREEN)
 
-        bat = pygame.image.load("bat.jpeg").convert()
+        bat = pygame.image.load(os.path.join(
+            os.getcwd(), "Python easy projects/Bat-Ball/bat.jpeg")).convert()
         batrect = bat.get_rect()
 
-        ball = pygame.image.load("ball.jpeg").convert()
+        ball = pygame.image.load(os.path.join(
+            os.getcwd(), "/Python easy projects/Bat-Ball/ball.jpeg")).convert()
         ball.set_colorkey((255, 255, 255))
         ballrect = ball.get_rect()
 
@@ -205,7 +208,8 @@ class Breakout():
 class Wall():
 
     def _init_(self):
-        self.brick = pygame.image.load("brick.jpeg").convert()
+        self.brick = pygame.image.load(
+            os.path.join(os.getcwd(), "/Python easy projects/Bat-Ball/brick.jpeg")).convert()
         brickrect = self.brick.get_rect()
         self.bricklength = brickrect.right - brickrect.left
         self.brickheight = brickrect.bottom - brickrect.top
