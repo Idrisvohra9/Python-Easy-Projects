@@ -1,7 +1,6 @@
 import pygame
-import sys
 
-# Strictly speaking, import sys is not needed for PyGame, but as we'll see later, to be able to use the "close window" button on Windows or Mac, we'll need to use sys.exit(), so it is helpful.
+
 
 pygame.init() # To initialize certain things.
 

@@ -4,7 +4,7 @@ from selenium import webdriver
 # Create the webdriver object. Here the
 # chromedriver is present in the driver
 # folder of the root directory.
-driver = webdriver.Chrome(r"C:\\bin\\chromedriver.exe")
+driver = webdriver.Chrome(r"C:\Program Files\chromedriver_win32",)
 
 # get https://www.geeksforgeeks.org/
 driver.get("https://www.geeksforgeeks.org/how-to-create-a-countdown-timer-using-python/")

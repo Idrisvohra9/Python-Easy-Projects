@@ -1,7 +1,7 @@
 import random
 import os
 os.system("cls")
-import colors
+import trmnl_colors as colors
 n=random.randint(0,100)
 count=1
 while True:

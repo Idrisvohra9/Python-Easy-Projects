@@ -40,6 +40,8 @@ def sound(which):
 
 count = 1
 print("'↩' to Spin and 'n' to exit: ")
+clr.whitefill()
+
 s1 = random.randrange(1, 7)
 s3 = random.randrange(1, 7)
 s2 = random.randrange(1, 7)
@@ -47,7 +49,9 @@ time.sleep(2)
 print("{}".format(insertSymbol(s1)), end=" |")
 print("{}".format(insertSymbol(s2)), end=" |")
 print("{}".format(insertSymbol(s3)), end=" /*")
+clr.reset()
 print()
+
 spin = ""
 while spin != 'n':
     clr.redB()

@@ -1,7 +1,7 @@
 import time
 import random
 import os
-import colors as clr
+import trmnl_colors as clr
 list1=["The","army","in","India","are","the","only","ones","in","the","whole","world","who","get","undying","respect","form","the","civils","residing","in","the","country.","The","color","of","the","Indian","flag","consists","of","orange,","white,","green","and","a","blue","cycle","tyre","like","symbol","is","called","Ashok","chakra."]
 
 list2=["Germany","is","one","of","beautiful,","richest","and","Popular","nation","that","everyone","knows","and","want","to","visit","Germany","is","a","part","of","central","europe.","Germany","has","common","border","with","Denmark,","the","Netherlands,","Belgium","Poland","etc.","The","government","is","a","fedral","republic","system.","The","country","is","full","of","river","valley","and","rising","and","falling","hills","also","the","snow","covered","alps","and","bushy","mountains."]
