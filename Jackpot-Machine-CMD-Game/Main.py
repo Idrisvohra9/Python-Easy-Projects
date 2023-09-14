@@ -1,5 +1,5 @@
 import pygame as pg
-import trmnl_colors as clr
+import trmnl_colors.functions as clr
 import time
 import random
 import os

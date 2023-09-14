@@ -25,7 +25,7 @@ def gen_random(underline_disabled=False, bg_disabled=False, italics_disabled=Fal
         48: clr.blackbg, 49: clr.redbg, 50: clr.greenbg, 51: clr.yellowbg, 52: clr.bluebg,
         53: clr.magentabg, 54: clr.cyanbg, 55: clr.whitebg, 56: clr.greybg
     }
-    
+
     # Extract the method names as strings
     method_names = [str(value.__name__) for value in color_map.values()]
 
@@ -54,9 +54,22 @@ def gen_random(underline_disabled=False, bg_disabled=False, italics_disabled=Fal
 
     if underline_disabled:
         counter += 1
-        num2 = list(sorted_color_map.keys())
-        underline_disabled_keys = num2[0:11]+num2[16:]
-        sorted_color_map[random.choice(underline_disabled_keys)]()
+        keys = list(sorted_color_map.keys())
+        underline_disabled_keys = []
+        for d in range(0, len(keys)):
+            for i in range(d, 4):
+                partArr = keys[i:i+4]
+                print(partArr)
+            underline_disabled_keys.extend(partArr)
+        # underline_disabled_keys = num2[0:4]+num2[5:9]
+        print(underline_disabled_keys)
+        # Choose a random item :
+        rng = random.choice(underline_disabled_keys)
+        print("Random item index:" + str(rng))
+        # Run that color
+        selColor = sorted_color_map[rng]
+        print(selColor)
+        selColor()
         print("Underline disabled.")
 
     if strikethrough_disabled:
