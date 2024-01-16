@@ -1,2 +1,6 @@
 /Reflex
 /Facial-Recognition
+/venv
+venv
+Default
+*.svg

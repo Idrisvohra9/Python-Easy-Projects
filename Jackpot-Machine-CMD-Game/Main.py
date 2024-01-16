@@ -1,8 +1,10 @@
+import os
+import random
+import time
+
 import pygame as pg
 import trmnl_colors.functions as clr
-import time
-import random
-import os
+
 os.system("cls")
 os.environ["TMPDIR"] = "/"
 pg.init()
