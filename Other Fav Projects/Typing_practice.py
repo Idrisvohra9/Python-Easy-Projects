@@ -1,14 +1,14 @@
 import time
 import random
 import os
-import trmnl_colors as clr
-list1=["The","army","in","India","are","the","only","ones","in","the","whole","world","who","get","undying","respect","form","the","civils","residing","in","the","country.","The","color","of","the","Indian","flag","consists","of","orange,","white,","green","and","a","blue","cycle","tyre","like","symbol","is","called","Ashok","chakra."]
+import trmnl_colors.functions as clr
+list1=["The","army","in","India","are","the","only","ones","in","the","whole","world","who","get","undying","respect","form","the","civil","residing","in","the","country.","The","color","of","the","Indian","flag","consists","of","orange,","white,","green","and","a","blue","cycle","tyre","like","symbol","is","called","Ashok","chakra."]
 
-list2=["Germany","is","one","of","beautiful,","richest","and","Popular","nation","that","everyone","knows","and","want","to","visit","Germany","is","a","part","of","central","europe.","Germany","has","common","border","with","Denmark,","the","Netherlands,","Belgium","Poland","etc.","The","government","is","a","fedral","republic","system.","The","country","is","full","of","river","valley","and","rising","and","falling","hills","also","the","snow","covered","alps","and","bushy","mountains."]
+list2=["Germany","is","one","of","beautiful,","richest","and","Popular","nation","that","everyone","knows","and","want","to","visit","Germany","is","a","part","of","central","europe.","Germany","has","common","border","with","Denmark,","the","Netherlands,","Belgium","Poland","etc.","The","government","is","a","federal","republic","system.","The","country","is","full","of","river","valley","and","rising","and","falling","hills","also","the","snow","covered","alps","and","bushy","mountains."]
 
 str1="One of the most known civilizations that thrived in Mexico was called the Mayans. The Mayans where considered to be pre-Columbian America's most brilliant civilization. They thrived between 250 and 900 A.D. Thanks to the Mayans we are able to say that we have a calendar and a writing system. They also built cities that functioned as hubs for the surrounding farm towns."
 
-str2="Japan is an island country in the North Pacific Ocean. It lies off the northeast coast of mainland Asia and faces Russia, Korea, and China. Four large islands and thousands of smaller ones make up Japan. The four major islands- Hokkaido, Honshu, Kyushu and Shikoku form a curve that extends for about 1,900 kilometres. Topography Japan is a land of great natural beauty. mountains and hills cover about 70% of the country. IN fact, Japanese islands consist of the rugged upper part of a great mountain range that rises from the floor of the North Pacific Ocean."
+str2="Japan is an island country in the North Pacific Ocean. It lies off the northeast coast of mainland Asia and faces Russia, Korea, and China. Four large islands and thousands of smaller ones make up Japan. The four major islands- Hokkaido, Honshu, Kyushu and Shikoku form a curve that extends for about 1,900 kilometers. Topography Japan is a land of great natural beauty. mountains and hills cover about 70% of the country. IN fact, Japanese islands consist of the rugged upper part of a great mountain range that rises from the floor of the North Pacific Ocean."
 
 list3=str1.split(" ")
 list4=str2.split(" ")
@@ -24,11 +24,11 @@ correct=0
 i=0
 start=time.time()
 while i<=len(sel_list)-1:
-    clr.cyanbg()
+    clr.cyanBg()
     print(sel_list[i],end="")
     print()
-    clr.reset()
-    clr.magentaB()
+    clr.white()
+    clr.magentaBold()
     inp=input()
     os.system("cls")
     if inp!=sel_list[i]:
